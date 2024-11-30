@@ -102,12 +102,14 @@ class SoundPage extends StatelessWidget {
             SizedBox(
               height: 53,
               child: OutlinedButton(
-                onPressed: () {
+                onPressed: (
+                  
+                ) {
                   debugPrint('Received click');
                 },
                 style: OutlinedButton.styleFrom(
                   side: const BorderSide(
-                    width: 1.5,
+                    width: 1.5 ,
                     color: Color(0xFF82E600),
                     style: BorderStyle.solid,
                   ),
