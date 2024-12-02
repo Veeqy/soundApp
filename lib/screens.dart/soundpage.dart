@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sound_app/screens.dart/profile_page.dart';
 
 class SoundPage extends StatelessWidget {
   const SoundPage({super.key});
@@ -34,7 +35,14 @@ class SoundPage extends StatelessWidget {
                     padding: EdgeInsets.zero,
                     minimumSize: Size.zero,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Profile_page(),
+                      ),
+                    );
+                  },
                   icon: const Center(
                     child: CircleAvatar(
                       backgroundColor: Color.fromARGB(255, 77, 75, 75),
@@ -96,20 +104,18 @@ class SoundPage extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-             const SizedBox(
+            const SizedBox(
               height: 26,
             ),
             SizedBox(
               height: 53,
               child: OutlinedButton(
-                onPressed: (
-                  
-                ) {
+                onPressed: () {
                   debugPrint('Received click');
                 },
                 style: OutlinedButton.styleFrom(
                   side: const BorderSide(
-                    width: 1.5 ,
+                    width: 1.5,
                     color: Color(0xFF82E600),
                     style: BorderStyle.solid,
                   ),
@@ -119,7 +125,7 @@ class SoundPage extends StatelessWidget {
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.w700,
-                    color: Color(0xFF82E600),                    
+                    color: Color(0xFF82E600),
                   ),
                 ),
               ),

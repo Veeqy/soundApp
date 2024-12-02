@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sound_app/screens.dart/soundpage.dart';
 
 class Profile_page extends StatelessWidget {
   const Profile_page({super.key});
@@ -18,15 +19,50 @@ class Profile_page extends StatelessWidget {
             end: Alignment.bottomCenter,
           ),
         ),
-        child: const Padding(
-          padding: EdgeInsets.symmetric(
+        child:  Padding(
+          padding: const EdgeInsets.symmetric(
             vertical: 16,
           ),
           child: Column(
-            children: [
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const SizedBox(
+              height: 30,
+            ),
               Row(
                 children: [
-                  // Icon(icon)
+                  IconButton(
+                  style: IconButton.styleFrom(
+                    tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                    padding: EdgeInsets.zero,
+                    minimumSize: Size.zero,
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const SoundPage(),
+                      ),
+                    );
+                  },
+                  icon: const Center(
+                    child: CircleAvatar(
+                      backgroundColor: Color.fromARGB(255, 77, 75, 75),
+                      radius: 14,
+                      foregroundColor: Color.fromARGB(255, 248, 246, 246),
+                      child:Icon(Icons.navigate_before_rounded),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                width:80 ,
+                ),
+                const Text('Account profile',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+                ),
                 ],
               ),
             ],
