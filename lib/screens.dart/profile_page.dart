@@ -24,6 +24,7 @@ class Profile_page extends StatelessWidget {
             vertical: 16,
           ),
           child: Column(
+            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               const SizedBox(
@@ -141,7 +142,7 @@ class Profile_page extends StatelessWidget {
               const Divider(
                 color: Color.fromARGB(255, 92, 91, 91),
               ),
-               const SizedBox(
+              const SizedBox(
                 height: 18,
               ),
               const Row(
@@ -168,9 +169,9 @@ class Profile_page extends StatelessWidget {
                 ],
               ),
               const Divider(
-              color: Color.fromARGB(255, 92, 91, 91),
+                color: Color.fromARGB(255, 92, 91, 91),
               ),
-               const SizedBox(
+              const SizedBox(
                 height: 18,
               ),
               const Row(
@@ -195,31 +196,36 @@ class Profile_page extends StatelessWidget {
               const Divider(
                 color: Color.fromARGB(255, 92, 91, 91),
               ),
-               const SizedBox(
-                height: 18,
+              const Expanded(
+                child: SizedBox(),
               ),
-              SizedBox(
-              height: 53,
-              child: OutlinedButton(
-                onPressed: () {
-                  debugPrint('Received click');
-                },
-                style: OutlinedButton.styleFrom(
-                  side: const BorderSide(
-                    width: 1.5,
-                    color: Color(0xFF82E600),
-                    style: BorderStyle.solid,
+              Padding(
+                padding: const EdgeInsets.only(
+                  bottom: 24,
+                ),
+                child: SizedBox(
+                  height: 50,
+                  child: OutlinedButton(
+                    onPressed: () {
+                      debugPrint('Received click');
+                    },
+                    style: OutlinedButton.styleFrom(
+                      side: const BorderSide(
+                        width: 1.5,
+                        color: Color(0xFF82E600),
+                        style: BorderStyle.solid,
+                      ),
+                    ),
+                    child: const Text(
+                      'Log in',
+                      style: TextStyle(
+                        fontSize: 24,
+                        color: Color(0xFF82E600),
+                      ),
+                    ),
                   ),
                 ),
-                child: const Text(
-                  'Log in',
-                  style: TextStyle(
-                    fontSize: 24,
-                    color: Color(0xFF82E600),
-                  ),
-                ),
-              ),
-            )
+              )
             ],
           ),
         ),
