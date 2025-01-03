@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sound_app/screens.dart/login_page.dart';
 import 'package:sound_app/screens.dart/soundpage.dart';
 
 class Profile_page extends StatelessWidget {
@@ -201,13 +202,18 @@ class Profile_page extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.only(
-                  bottom: 24,
+                  bottom: 56,
                 ),
                 child: SizedBox(
-                  height: 50,
+                  height: 56,
                   child: OutlinedButton(
                     onPressed: () {
-                      debugPrint('Received click');
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const Login_page(),
+                        ),
+                      );
                     },
                     style: OutlinedButton.styleFrom(
                       side: const BorderSide(
