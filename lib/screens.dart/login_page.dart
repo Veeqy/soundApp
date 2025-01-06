@@ -57,6 +57,69 @@ class Login_page extends StatelessWidget {
                   ),
                 ],
               ),
+              const SizedBox(
+              height: 16,
+              ),
+              const Text(
+                'Login',
+              style: TextStyle(
+                fontSize: 36,
+                color: Colors.white,
+              ),
+              ),
+              const SizedBox(
+                height: 36,
+              ),
+              const Text(
+                'Email address',
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Color.fromARGB(255, 173, 171, 171),
+                ),
+              ),
+              const SizedBox(
+                height: 16,
+              ),
+               SizedBox(
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {}, 
+                  style:  ElevatedButton.styleFrom(
+                backgroundColor: const Color.fromARGB(255, 77, 75, 75),
+                ), child: const Text(
+                  'Email address',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Color.fromARGB(157, 173, 171, 171),
+                  ),
+                ),
+                ),
+              ),
+              const Text(
+                'Password',
+                style: TextStyle(
+                  fontSize: 18,
+                  color: Color.fromARGB(255, 173, 171, 171),
+                ),
+              ),
+              const SizedBox(
+                height: 16,
+              ),
+               SizedBox(
+                height: 50,
+                child: ElevatedButton(
+                  onPressed: () {}, 
+                  style:  ElevatedButton.styleFrom(
+                backgroundColor: const Color.fromARGB(255, 77, 75, 75),
+                ), child: const Text(
+                  'Password',
+                  style: TextStyle(
+                    fontSize: 20,
+                    color: Color.fromARGB(157, 173, 171, 171),
+                  ),
+                ),
+                ),
+              ),
             ],
           ),
         ),
