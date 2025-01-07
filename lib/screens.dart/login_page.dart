@@ -58,14 +58,14 @@ class Login_page extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-              height: 16,
+                height: 16,
               ),
               const Text(
                 'Login',
-              style: TextStyle(
-                fontSize: 36,
-                color: Colors.white,
-              ),
+                style: TextStyle(
+                  fontSize: 36,
+                  color: Colors.white,
+                ),
               ),
               const SizedBox(
                 height: 36,
@@ -80,20 +80,22 @@ class Login_page extends StatelessWidget {
               const SizedBox(
                 height: 16,
               ),
-               SizedBox(
+               Container(
                 height: 50,
-                child: ElevatedButton(
-                  onPressed: () {}, 
-                  style:  ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 77, 75, 75),
-                ), child: const Text(
-                  'Email address',
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Color.fromARGB(157, 173, 171, 171),
-                  ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color:const Color.fromARGB(255, 77, 75, 75),
                 ),
-                ),
+                // child: ElevatedButton(
+                //   onPressed: () {},
+                //   child: const Text(
+                //     'Email address',
+                //     style: TextStyle(
+                //       fontSize: 20,
+                //       color: Color.fromARGB(157, 173, 171, 171),
+                //     ),
+                //   ),
+                // ),
               ),
               const Text(
                 'Password',
@@ -105,19 +107,21 @@ class Login_page extends StatelessWidget {
               const SizedBox(
                 height: 16,
               ),
-               SizedBox(
+              Container(
                 height: 50,
-                child: ElevatedButton(
-                  onPressed: () {}, 
-                  style:  ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 77, 75, 75),
-                ), child: const Text(
-                  'Password',
-                  style: TextStyle(
-                    fontSize: 20,
-                    color: Color.fromARGB(157, 173, 171, 171),
-                  ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color:const Color.fromARGB(255, 77, 75, 75),
                 ),
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: const Text(
+                    'Password',
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Color.fromARGB(157, 173, 171, 171),
+                    ),
+                  ),
                 ),
               ),
             ],
