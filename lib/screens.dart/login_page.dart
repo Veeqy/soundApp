@@ -80,22 +80,11 @@ class Login_page extends StatelessWidget {
               const SizedBox(
                 height: 16,
               ),
-               Container(
-                height: 50,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color:const Color.fromARGB(255, 77, 75, 75),
+              TextFormField(
+                decoration: const InputDecoration(
+                  border: UnderlineInputBorder(),
+                  labelText: 'Email address',
                 ),
-                // child: ElevatedButton(
-                //   onPressed: () {},
-                //   child: const Text(
-                //     'Email address',
-                //     style: TextStyle(
-                //       fontSize: 20,
-                //       color: Color.fromARGB(157, 173, 171, 171),
-                //     ),
-                //   ),
-                // ),
               ),
               const Text(
                 'Password',
@@ -108,19 +97,11 @@ class Login_page extends StatelessWidget {
                 height: 16,
               ),
               Container(
-                height: 50,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
-                  color:const Color.fromARGB(255, 77, 75, 75),
-                ),
-                child: ElevatedButton(
-                  onPressed: () {},
-                  child: const Text(
-                    'Password',
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Color.fromARGB(157, 173, 171, 171),
-                    ),
+                
+                child: TextFormField(
+                  decoration: const InputDecoration(
+                    border: UnderlineInputBorder(),
+                    labelText: 'Password',
                   ),
                 ),
               ),
