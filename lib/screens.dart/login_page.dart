@@ -82,8 +82,15 @@ class Login_page extends StatelessWidget {
               ),
               TextFormField(
                 decoration: const InputDecoration(
-                  border: UnderlineInputBorder(),
+                  border: OutlineInputBorder(
+                    
+                  ),
                   labelText: 'Email address',
+                  labelStyle: TextStyle(
+                    color: Color.fromARGB(255, 138, 135, 135),
+                  ),
+                  filled: true,
+                  fillColor: Color.fromARGB(255, 77, 75, 75),
                 ),
               ),
               const Text(
@@ -96,13 +103,15 @@ class Login_page extends StatelessWidget {
               const SizedBox(
                 height: 16,
               ),
-              Container(
-                
-                child: TextFormField(
-                  decoration: const InputDecoration(
-                    border: UnderlineInputBorder(),
-                    labelText: 'Password',
+              TextFormField(
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Password',
+                  labelStyle: TextStyle(
+                    color: Color.fromARGB(255, 138, 135, 135),
                   ),
+                  filled: true,
+                  fillColor: Color.fromARGB(255, 77, 75, 75),
                 ),
               ),
             ],
