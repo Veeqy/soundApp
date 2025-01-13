@@ -80,17 +80,20 @@ class Login_page extends StatelessWidget {
               const SizedBox(
                 height: 16,
               ),
-              TextFormField(
-                decoration: const InputDecoration(
+               const TextField(
+                decoration: InputDecoration(
                   border: OutlineInputBorder(
-                    
+                  
                   ),
-                  labelText: 'Email address',
-                  labelStyle: TextStyle(
+                  hintText: 'Email address',
+                  hintStyle: TextStyle(
                     color: Color.fromARGB(255, 138, 135, 135),
                   ),
                   filled: true,
                   fillColor: Color.fromARGB(255, 77, 75, 75),
+                ),
+                style: TextStyle(
+                  color: Color.fromARGB(255, 138, 135, 135),
                 ),
               ),
               const Text(
