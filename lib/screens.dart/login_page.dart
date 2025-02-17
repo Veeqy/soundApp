@@ -24,101 +24,114 @@ class Login_page extends StatelessWidget {
             vertical: 16,
           ),
           child: Column(
-            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              const SizedBox(
-                height: 30,
-              ),
-              Row(
-                children: [
-                  IconButton(
-                    style: IconButton.styleFrom(
-                      tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-                      padding: EdgeInsets.zero,
-                      minimumSize: Size.zero,
-                    ),
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const Profile_page(),
+              // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                const SizedBox(
+                  height: 30,
+                ),
+                Row(
+                  children: [
+                    IconButton(
+                      style: IconButton.styleFrom(
+                        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                        padding: EdgeInsets.zero,
+                        minimumSize: Size.zero,
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const Profile_page(),
+                          ),
+                        );
+                      },
+                      icon: const Center(
+                        child: CircleAvatar(
+                          backgroundColor: Color.fromARGB(255, 77, 75, 75),
+                          radius: 14,
+                          foregroundColor: Color.fromARGB(255, 248, 246, 246),
+                          child: Icon(Icons.navigate_before_rounded),
                         ),
-                      );
-                    },
-                    icon: const Center(
-                      child: CircleAvatar(
-                        backgroundColor: Color.fromARGB(255, 77, 75, 75),
-                        radius: 14,
-                        foregroundColor: Color.fromARGB(255, 248, 246, 246),
-                        child: Icon(Icons.navigate_before_rounded),
                       ),
                     ),
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 16,
-              ),
-              const Text(
-                'Login',
-                style: TextStyle(
-                  fontSize: 36,
-                  color: Colors.white,
+                  ],
                 ),
-              ),
-              const SizedBox(
-                height: 36,
-              ),
-              const Text(
-                'Email address',
-                style: TextStyle(
-                  fontSize: 18,
-                  color: Color.fromARGB(255, 173, 171, 171),
+                const SizedBox(
+                  height: 16,
                 ),
-              ),
-              const SizedBox(
-                height: 16,
-              ),
-               const TextField(
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(
-                  
+                const Text(
+                  'Login',
+                  style: TextStyle(
+                    fontSize: 36,
+                    color: Colors.white,
                   ),
-                  hintText: 'Email address',
-                  hintStyle: TextStyle(
+                ),
+                const SizedBox(
+                  height: 36,
+                ),
+                const Text(
+                  'Email address',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Color.fromARGB(255, 173, 171, 171),
+                  ),
+                ),
+                const SizedBox(
+                  height: 12,
+                ),
+                const TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
+                      borderSide: BorderSide.none,
+                    ),
+                    hintText: 'Email address',
+                    hintStyle: TextStyle(
+                      color: Color.fromARGB(255, 138, 135, 135),
+                    ),
+                    filled: true,
+                    fillColor: Color.fromARGB(255, 51, 50, 59),
+                  ),
+                  style: TextStyle(
                     color: Color.fromARGB(255, 138, 135, 135),
                   ),
-                  filled: true,
-                  fillColor: Color.fromARGB(255, 77, 75, 75),
                 ),
-                style: TextStyle(
-                  color: Color.fromARGB(255, 138, 135, 135),
+                const SizedBox(
+                  height: 12,
                 ),
-              ),
-              const Text(
-                'Password',
-                style: TextStyle(
-                  fontSize: 18,
-                  color: Color.fromARGB(255, 173, 171, 171),
+                const Text(
+                  'Password',
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Color.fromARGB(255, 173, 171, 171),
+                  ),
                 ),
-              ),
-              const SizedBox(
-                height: 16,
-              ),
-              TextFormField(
-                decoration: const InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Password',
-                  labelStyle: TextStyle(
+                const SizedBox(
+                  height: 12,
+                ),
+                const TextField(
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(8.0),
+                      ),
+                      borderSide: BorderSide.none,
+                    ),
+                    hintText: 'Password',
+                    hintStyle: TextStyle(
+                      color: Color.fromARGB(255, 138, 135, 135),
+                    ),
+                    filled: true,
+                    fillColor: Color.fromARGB(255, 51, 50, 59),
+                  ),
+                  style: TextStyle(
                     color: Color.fromARGB(255, 138, 135, 135),
                   ),
-                  filled: true,
-                  fillColor: Color.fromARGB(255, 77, 75, 75),
                 ),
-              ),
-            ],
-          ),
+              ]),
         ),
       ),
     );
